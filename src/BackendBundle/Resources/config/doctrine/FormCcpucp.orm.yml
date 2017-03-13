@@ -1,0 +1,185 @@
+BackendBundle\Entity\FormCcpucp:
+    type: entity
+    table: form_ccpucp
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        txtempresa:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: txtEmpresa
+        txtchartfields:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: txtChartfields
+        txtresponsable:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: txtResponsable
+        txtmailresponsable:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: txtMailResponsable
+        txttelresponsable:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: txtTelResponsable
+        txttipevento:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: txtTipEvento
+        txtnameevento:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: txtNameEvento
+        txtdateinicevento:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+            column: txtDateInicEvento
+        txtdatefinevento:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+            column: txtDateFinEvento
+        txtdateinchoraevnt:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+            column: txtDateIncHoraEvnt
+        txtfindatehoraevent:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: txtFinDateHoraEvent
+        txttemas:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: txtTemas
+        txtnombreexpositores:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: txtNombreExpositores
+        cboingresoevento:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+            column: cboIngresoEvento
+        cbosalatipoauditorio:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+            column: cboSalaTipoAuditorio
+        cbodirectorio:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+            column: cboDirectorio
+        cbosalondeclases:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+            column: cboSalonDeClases
+        cbosalamesasu:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+            column: cboSalaMesasU
+        rdoproyector:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+            column: rdoProyector
+        rdopizarra:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+            column: rdoPizarra
+        rdodvd:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+            column: rdoDVD
+        rdomicrofonos:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+            column: rdoMicrofonos
+        rdomesaregistroparticipantes:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+            column: rdoMesaRegistroParticipantes
+        txtcomentario:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+            column: txtComentario
+        fecha:
+            type: datetime
+            nullable: false
+    lifecycleCallbacks: {  }

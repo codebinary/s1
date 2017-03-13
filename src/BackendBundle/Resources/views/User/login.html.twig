@@ -1,0 +1,44 @@
+{% extends 'BackendBundle::layout.html.twig' %}
+
+{% block content %}
+
+
+    
+    <body>
+
+      {% if app.user != null %}
+        {{dump(app.user)}}
+    {% endif %}
+
+<div class="form-header">
+          <div class="app-brand"><span class="highlight">Simplio</span> Admin</div>
+        </div>
+  <form action="{{path("login_check")}}" method="post">
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">
+                <i class="fa fa-user" aria-hidden="true"></i></span>
+              <input  type="text" 
+                      class="form-control" 
+                      placeholder="Username"        
+                      aria-describedby="basic-addon1"
+                      id="username"
+                      name="_username"
+                      value="{{ last_username }}">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon2">
+                <i class="fa fa-key" aria-hidden="true"></i></span>
+              <input  type="password" 
+                      class="form-control" 
+                      placeholder="Password" 
+                      aria-describedby="basic-addon2"
+                      id="password"
+                      name="_password">
+            </div>
+            <div class="text-center">
+                <input type="submit" value="Login">
+                <input type="hidden" name="_target_path" value="/login">
+            </div>
+        </form>
+
+{% endblock %}

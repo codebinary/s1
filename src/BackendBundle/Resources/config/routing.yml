@@ -1,0 +1,14 @@
+login:
+    path: /login
+    defaults: { _controller: BackendBundle:User:login}
+
+login_check:
+    path: /login_check
+
+logout:
+    path: /login
+
+backend_homepage:
+    path:     /
+    defaults: { _controller: BackendBundle:Default:index }
+  

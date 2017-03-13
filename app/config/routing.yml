@@ -1,0 +1,4 @@
+backend:
+    resource: "@BackendBundle/Resources/config/routing.yml"
+    prefix:   /
+
