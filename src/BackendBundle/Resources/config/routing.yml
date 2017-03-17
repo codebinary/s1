@@ -8,7 +8,12 @@ login_check:
 logout:
     path: /login
 
-backend_homepage:
-    path:     /
-    defaults: { _controller: BackendBundle:Default:index }
+backend_admin_dashboard:
+    path: /admin/dashboard
+    defaults: { _controller: BackendBundle:Default:index}
+
+
+#backend_homepage:
+#    path:     /
+#    defaults: { _controller: BackendBundle:Default:index }
   

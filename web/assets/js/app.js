@@ -10199,16 +10199,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var timeout = null;
 
-(0, _jquery2.default)(".app-login form").on("submit", function (e) {
-  e.preventDefault();
-
-  (0, _jquery2.default)(".app-login .app-container").addClass("__loading");
-
-  clearTimeout(timeout);
-  timeout = setTimeout(function () {
-    (0, _jquery2.default)(".app-login .app-container").removeClass("__loading");
-  }, 3000);
-});
 
 },{"jquery":"/Users/tui2tone/Documents/workspace/tui2tone/templates/flat-admin-bootstrap-templates/node_modules/jquery/dist/jquery.js"}],"/Users/tui2tone/Documents/workspace/tui2tone/templates/flat-admin-bootstrap-templates/src/components/messaging/messaging.js":[function(require,module,exports){
 "use strict";
@@ -10223,15 +10213,7 @@ $('#search').autocomplete({
   lookup: countries
 });
 
-$(".sidebar-toggle").bind("click", function (e) {
-  $("#sidebar").toggleClass("active");
-  $(".app-container").toggleClass("__sidebar");
-});
 
-$(".navbar-toggle").bind("click", function (e) {
-  $("#navbar").toggleClass("active");
-  $(".app-container").toggleClass("__navbar");
-});
 
 },{}],"/Users/tui2tone/Documents/workspace/tui2tone/templates/flat-admin-bootstrap-templates/src/components/theming/theming.js":[function(require,module,exports){
 'use strict';

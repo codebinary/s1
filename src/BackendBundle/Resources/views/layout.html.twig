@@ -20,6 +20,15 @@
 
 </head>
 
+{% set url = app.request.uri %}
+{{ dump(url) }}
+
+
+{% if app.user != null %}
+  {% block menu %}
+      {% include 'BackendBundle::navegacion.html.twig' %}
+  {% endblock %}
+{% endif %}
 
 {% block content %}
     Content default
