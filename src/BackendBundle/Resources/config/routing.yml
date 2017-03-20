@@ -6,11 +6,19 @@ login_check:
     path: /login_check
 
 logout:
-    path: /login
+    path: /logout
 
 backend_admin_dashboard:
     path: /admin/dashboard
     defaults: { _controller: BackendBundle:Default:index}
+
+backend_admin_list_user:
+    path: /admin/user/list
+    defaults: {_controller: BackendBundle:User:list}
+
+backend_admin_create_user:
+    path: /admin/user/create
+    defaults: { _controller: BackendBundle:User:create }
 
 
 #backend_homepage:

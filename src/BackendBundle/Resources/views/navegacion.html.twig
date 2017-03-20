@@ -1,6 +1,6 @@
 <aside class="app-sidebar" id="sidebar">
   <div class="sidebar-header">
-    <a class="sidebar-brand" href="#"><span class="highlight">Flat v3</span> Admin</a>
+    <a class="sidebar-brand" href="#"><span class="highlight">CCPUCP</span> Admin</a>
     <button type="button" class="sidebar-toggle">
       <i class="fa fa-times"></i>
     </button>
@@ -8,21 +8,48 @@
   <div class="sidebar-menu">
     <ul class="sidebar-nav">
       <li class="active">
-        <a href="./index.html">
+        <a href="{{ path('backend_admin_dashboard') }}">
           <div class="icon">
             <i class="fa fa-tasks" aria-hidden="true"></i>
           </div>
           <div class="title">Dashboard</div>
         </a>
       </li>
-      <li class="@@menu.messaging">
+      <!--<li class="@@menu.messaging">
         <a href="./messaging.html">
           <div class="icon">
             <i class="fa fa-comments" aria-hidden="true"></i>
           </div>
           <div class="title">Messaging</div>
         </a>
+      </li>-->
+
+      <li class="dropdown ">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          <div class="icon">
+            <i class="fa fa-cube" aria-hidden="true"></i>
+          </div>
+          <div class="title">Usuarios</div>
+        </a>
+        <div class="dropdown-menu">
+          <ul>
+            <li class="section"><i class="fa fa-file-o" aria-hidden="true"></i>Usuarios</li>
+            <li><a href="{{ path('backend_admin_list_user') }}">Listar</a></li>
+            <li><a href="{{ path('backend_admin_create_user') }}">Crear</a></li>
+            <li><a href="./uikits/card.html">Card</a></li>
+            <li><a href="./uikits/form.html">Form</a></li>
+            <li><a href="./uikits/table.html">Table</a></li>
+            <li><a href="./uikits/icons.html">Icons</a></li>
+            <li class="line"></li>
+            <li class="section"><i class="fa fa-file-o" aria-hidden="true"></i> Advanced Components</li>
+            <li><a href="./uikits/pricing-table.html">Pricing Table</a></li>
+            <!-- <li><a href="./uikits/timeline.html">Timeline</a></li> -->
+            <li><a href="./uikits/chart.html">Chart</a></li>
+          </ul>
+        </div>
       </li>
+
+
       <li class="dropdown ">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
           <div class="icon">
@@ -100,7 +127,7 @@
         </li>
         <li>
           <button type="button" class="navbar-toggle">
-            <img class="profile-img" src="./assets/images/profile.png">
+            <img class="profile-img" src="{{ asset('assets/images/profile.png') }}">
           </button>
         </li>
       </ul>
@@ -112,7 +139,7 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown notification">
+        <!--<li class="dropdown notification">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             <div class="icon"><i class="fa fa-shopping-basket" aria-hidden="true"></i></div>
             <div class="title">New Orders</div>
@@ -127,8 +154,8 @@
               </li>
             </ul>
           </div>
-        </li>
-        <li class="dropdown notification warning">
+        </li>-->
+        <!--<li class="dropdown notification warning">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             <div class="icon"><i class="fa fa-comments" aria-hidden="true"></i></div>
             <div class="title">Unread Messages</div>
@@ -178,8 +205,8 @@
               </li>
             </ul>
           </div>
-        </li>
-        <li class="dropdown notification danger">
+        </li>-->
+        <!--<li class="dropdown notification danger">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             <div class="icon"><i class="fa fa-bell" aria-hidden="true"></i></div>
             <div class="title">System Notifications</div>
@@ -216,15 +243,15 @@
               </li>
             </ul>
           </div>
-        </li>
+        </li>-->
         <li class="dropdown profile">
           <a href="/html/pages/profile.html" class="dropdown-toggle" data-toggle="dropdown">
-            <img class="profile-img" src="./assets/images/profile.png">
+            <img class="profile-img" src="{{ asset('assets/images/profile.png') }}">
             <div class="title">Profile</div>
           </a>
           <div class="dropdown-menu">
             <div class="profile-info">
-              <h4 class="username">Scott White</h4>
+              <h4 class="username">{{ app.user.name }} {{ app.user.surname }}</h4>
             </div>
             <ul class="action">
               <li>
@@ -232,19 +259,19 @@
                   Profile
                 </a>
               </li>
-              <li>
+              <!--<li>
                 <a href="#">
                   <span class="badge badge-danger pull-right">5</span>
                   My Inbox
                 </a>
-              </li>
+              </li>-->
               <li>
                 <a href="#">
                   Setting
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="{{ path('logout') }}">
                   Logout
                 </a>
               </li>
@@ -255,4 +282,3 @@
     </div>
   </div>
 </nav>
-</div>

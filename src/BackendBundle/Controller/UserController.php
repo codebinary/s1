@@ -24,4 +24,16 @@ class UserController extends Controller
     	));
 
     }
+
+    public function listAction(Request $request){
+
+        return $this->render("BackendBundle:User:index.html.twig");
+
+    }
+
+    public function createAction(Request $request){
+
+        return $this->render("BackendBundle:User:create.html.twig");
+
+    }
 }

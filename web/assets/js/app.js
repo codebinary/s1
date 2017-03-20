@@ -10444,6 +10444,7 @@ $(".select2").select2();
 'use strict';
 
 var datatable = $('.datatable').DataTable({
+  responsive: true,		
   "dom": '<"top"fl<"clear">>rt<"bottom"ip<"clear">>',
   "oLanguage": {
     "sSearch": "",

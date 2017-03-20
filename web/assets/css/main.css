@@ -1,0 +1,13 @@
+.app-login{
+	background: #043D5D;
+}
+
+.app-login .app-body .app-block .app-form .form-header .highlight{
+	color: #043D5D;
+}
+
+form .btn.btn-success{
+	border-color: #3757ab;
+    border-bottom-color: #063854;
+    background-color: #043D5D;
+}
